@@ -11,8 +11,20 @@ bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-
 ### Windows PowerShell
 
 ```powershell
-irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.bat | iex; .\deploy-new-project.bat my-project-name
+iex (irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1); Deploy-Project my-project-name
 ```
+
+或者更简单：
+
+```powershell
+irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 | iex
+```
+
+然后输入项目名称。
+
+### Windows CMD
+
+CMD 不支持直接执行远程脚本，建议使用 PowerShell 或 Git Bash。
 
 ## 方法 1：GitHub Template
 
