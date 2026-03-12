@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Users/studyspace/**)",
+      "Bash(mv Htmler progressive-dev-framework)",
+      "Bash(find /c/Users/luoxu/.claude/projects/D--Users-studyspace* -name \"MEMORY.md\" -o -name \"*.md\" | head -20)",
+      "Bash(ls -la /c/Users/luoxu/.claude/projects/D--Users-studyspace*/)",
+      "Bash(grep -r \"progressive\" /c/Users/luoxu/.claude/projects/D--Users-studyspace*/memory/ 2>/dev/null || echo \"No memory files found\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
