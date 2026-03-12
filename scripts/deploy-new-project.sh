@@ -23,6 +23,11 @@ cd "$PROJECT_PATH"
 # 删除原有 git 历史
 rm -rf .git
 
+# 清理框架相关的文件（新项目不需要）
+rm -rf scripts/
+rm -f docs/project-history.md docs/setup-complete.md docs/summary.md docs/release-checklist.md docs/quick-deploy.md
+rm -f demo/hello-htmler.html
+
 # 初始化新的 git 仓库
 git init -q
 git add .

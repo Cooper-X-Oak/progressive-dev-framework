@@ -28,6 +28,11 @@ cd /d "%PROJECT_PATH%"
 REM 删除原有 git 历史
 rmdir /s /q .git
 
+REM 清理框架相关的文件（新项目不需要）
+rmdir /s /q scripts 2>nul
+del /q docs\project-history.md docs\setup-complete.md docs\summary.md docs\release-checklist.md docs\quick-deploy.md 2>nul
+del /q demo\hello-htmler.html 2>nul
+
 REM 初始化新的 git 仓库
 git init
 git add .
