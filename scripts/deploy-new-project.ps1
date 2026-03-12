@@ -1,15 +1,25 @@
 # Progressive Dev Framework - PowerShell 快速部署脚本
 
 param(
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$false)]
     [string]$ProjectName,
 
     [Parameter(Mandatory=$false)]
     [string]$TargetDir = "."
 )
 
+# 如果没有提供项目名称，提示输入
+if ([string]::IsNullOrEmpty($ProjectName)) {
+    $ProjectName = Read-Host "请输入项目名称"
+    if ([string]::IsNullOrEmpty($ProjectName)) {
+        Write-Host "错误: 项目名称不能为空" -ForegroundColor Red
+        exit 1
+    }
+}
+
 $ProjectPath = Join-Path $TargetDir $ProjectName
 
+Write-Host ""
 Write-Host "🚀 开始部署 Progressive Dev Framework..." -ForegroundColor Green
 Write-Host "📁 项目名称: $ProjectName"
 Write-Host "📂 目标路径: $ProjectPath"
