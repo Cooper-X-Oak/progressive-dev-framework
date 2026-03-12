@@ -20,21 +20,36 @@ progressive-dev-framework/
 └── docs/              # 架构决策和文档
 ```
 
-## 使用方式
+## 快速部署
 
-### 作为新项目的起点
+### 方法 1：使用 GitHub Template（推荐）
+
+1. 点击仓库页面的 "Use this template" 按钮
+2. 创建你的新项目
+3. 克隆到本地开始使用
+
+### 方法 2：使用部署脚本
 
 ```bash
-# 1. 克隆或下载这个框架
-git clone https://github.com/your-username/progressive-dev-framework.git my-project
+# Linux/Mac
+curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.sh | bash -s my-project-name
 
-# 2. 进入项目目录
-cd my-project
-
-# 3. 根据你的项目定制 CLAUDE.md 和 README.md
-
-# 4. 开始使用 /demo-design 设计第一个功能
+# Windows - 下载并运行
+# scripts/deploy-new-project.bat my-project-name
 ```
+
+### 方法 3：手动克隆
+
+```bash
+git clone https://github.com/Cooper-X-Oak/progressive-dev-framework.git my-project
+cd my-project
+rm -rf .git
+git init
+```
+
+详见 [快速部署指南](docs/quick-deploy.md)
+
+## 使用方式
 
 ### 开发流程
 
