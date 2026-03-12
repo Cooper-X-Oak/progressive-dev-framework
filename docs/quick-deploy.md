@@ -11,16 +11,16 @@ bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-
 ### Windows PowerShell
 
 ```powershell
-iex (irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1); Deploy-Project my-project-name
-```
-
-或者更简单：
-
-```powershell
 irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 | iex
 ```
 
-然后输入项目名称。
+运行后会提示输入项目名称。
+
+或者直接指定项目名称：
+
+```powershell
+$ProjectName="my-project"; irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 | iex
+```
 
 ### Windows CMD
 
