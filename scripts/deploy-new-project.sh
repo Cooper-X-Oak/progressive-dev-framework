@@ -2,8 +2,8 @@
 # Progressive Dev Framework - 快速部署脚本
 
 if [ -z "$1" ]; then
-    echo "用法: ./deploy-new-project.sh <项目名称> [目标目录]"
-    echo "示例: ./deploy-new-project.sh my-new-project ~/projects"
+    echo "用法: bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.sh) <项目名称> [目标目录]"
+    echo "示例: bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.sh) my-project"
     exit 1
 fi
 
@@ -16,7 +16,7 @@ echo "📁 项目名称: $PROJECT_NAME"
 echo "📂 目标路径: $PROJECT_PATH"
 
 # 克隆框架
-git clone https://github.com/Cooper-X-Oak/progressive-dev-framework.git "$PROJECT_PATH"
+git clone --depth 1 https://github.com/Cooper-X-Oak/progressive-dev-framework.git "$PROJECT_PATH" 2>/dev/null
 
 cd "$PROJECT_PATH"
 
@@ -24,9 +24,9 @@ cd "$PROJECT_PATH"
 rm -rf .git
 
 # 初始化新的 git 仓库
-git init
+git init -q
 git add .
-git commit -m "Initial commit based on Progressive Dev Framework"
+git commit -q -m "Initial commit based on Progressive Dev Framework"
 
 echo ""
 echo "✅ 部署完成！"
