@@ -1,6 +1,6 @@
 {
   "name": "progressive-dev-framework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A progressive development framework template for rapid prototyping and systematic evolution",
   "bin": {
     "create-progressive-project": "bin/create-project.js"
