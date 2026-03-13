@@ -11,7 +11,12 @@
       "Bash(git commit:*)",
       "Bash(git branch:*)",
       "Bash(git remote:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm whoami:*)",
+      "Bash(npm config:*)",
+      "Bash(npm view:*)",
+      "Bash(npm publish:*)",
+      "Bash(npm cache:*)"
     ]
   }
 }

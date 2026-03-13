@@ -25,7 +25,7 @@ progressive-dev-framework/
 ### NPX 一键部署（推荐，跨平台）
 
 ```bash
-npx @cooper-x-oak/progressive-dev-framework my-project-name
+npx progressive-dev-framework my-project-name
 ```
 
 ### 其他方式
