@@ -28,8 +28,8 @@ progressive-dev-framework/
 # Linux/Mac
 bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.sh) my-project-name
 
-# Windows PowerShell
-iwr https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 -OutFile deploy.ps1; .\deploy.ps1; Remove-Item deploy.ps1
+# Windows PowerShell (如遇执行策略错误，见文档)
+iwr https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 -OutFile deploy.ps1; powershell -ExecutionPolicy Bypass -File deploy.ps1; Remove-Item deploy.ps1
 ```
 
 ### 其他方式

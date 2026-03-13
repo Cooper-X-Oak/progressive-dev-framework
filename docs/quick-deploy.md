@@ -10,8 +10,22 @@ bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-
 
 ### Windows PowerShell
 
+**一键部署（推荐）：**
+
 ```powershell
 iwr https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 -OutFile deploy.ps1; .\deploy.ps1; Remove-Item deploy.ps1
+```
+
+**如果遇到执行策略错误，先运行：**
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+**或者使用 Bypass 方式（单次绕过）：**
+
+```powershell
+iwr https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 -OutFile deploy.ps1; powershell -ExecutionPolicy Bypass -File deploy.ps1; Remove-Item deploy.ps1
 ```
 
 运行后会提示输入项目名称。
