@@ -29,7 +29,7 @@ progressive-dev-framework/
 bash <(curl -sSL https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.sh) my-project-name
 
 # Windows PowerShell
-irm https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 | iex
+iwr https://raw.githubusercontent.com/Cooper-X-Oak/progressive-dev-framework/main/scripts/deploy-new-project.ps1 -OutFile deploy.ps1; .\deploy.ps1; Remove-Item deploy.ps1
 ```
 
 ### 其他方式
