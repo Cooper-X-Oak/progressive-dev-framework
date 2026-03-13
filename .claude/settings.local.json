@@ -16,7 +16,10 @@
       "Bash(npm config:*)",
       "Bash(npm view:*)",
       "Bash(npm publish:*)",
-      "Bash(npm cache:*)"
+      "Bash(npm cache:*)",
+      "Bash(git config:)",
+      "Bash(git config:*)",
+      "Bash(cd D:/Users/studyspace/progressive-dev-framework && rm -f demo/hello-htmler.html docs/project-history.md docs/setup-complete.md docs/summary.md docs/release-checklist.md docs/quick-deploy.md)"
     ]
   }
 }
