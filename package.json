@@ -1,0 +1,29 @@
+{
+  "name": "@cooper-x-oak/progressive-dev-framework",
+  "version": "0.1.0",
+  "description": "A progressive development framework template for rapid prototyping and systematic evolution",
+  "bin": {
+    "create-progressive-project": "./bin/create-project.js"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "framework",
+    "template",
+    "progressive",
+    "development",
+    "demo",
+    "prototype"
+  ],
+  "author": "Cooper-X-Oak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cooper-X-Oak/progressive-dev-framework.git"
+  },
+  "homepage": "https://github.com/Cooper-X-Oak/progressive-dev-framework#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

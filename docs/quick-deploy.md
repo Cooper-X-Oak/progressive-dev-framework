@@ -1,6 +1,14 @@
 # 快速部署指南
 
-## 一行命令部署（推荐）
+## NPX 一键部署（推荐，跨平台）
+
+```bash
+npx @cooper-x-oak/progressive-dev-framework my-project-name
+```
+
+这是最简单的方式，适用于所有平台（Windows/Mac/Linux），无需安装任何东西。
+
+## 平台特定命令
 
 ### Linux/Mac
 
